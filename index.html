@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Navya Katta</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Navya Katta</h1>
+            <p class="tagline">Aspiring Frontend Developer | Web Enthusiast</p>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p>I'm currently pursuing a summer internship at ApexPlanet Software Pvt. Ltd., focused on enhancing my skills in HTML, CSS, and JavaScript. This webpage marks the beginning of my web development journey, showcasing clean structure and responsive design.</p>
+            <img src="workspace" alt="Developer Workspace" />
+        </section>
+
+        <section class="quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="https://www.apexplanet.in" target="_blank">ApexPlanet Official Site</a></li>
+                <li><a href="https://www.linkedin.com/in/navya-katta-ba23842b6" target="_blank">My LinkedIn</a></li>
+                <li><a href="https://github.com/Navya0604" target="_blank">My GitHub</a></li>
+            </ul>
+        </section>
+
+        <section class="image-gallery">
+        <h2>Image Gallery</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=400&h=300&fit=crop" alt="Workspace Setup" onclick="openImage(this.src)">
+    
+                <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=400&h=300&fit=crop" alt="Coding Screen" onclick="openImage(this.src)">
+    
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop" alt="Team Collaboration" onclick="openImage(this.src)">
+    
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="Modern Office" onclick="openImage(this.src)">
+            </div>
+
+            <div id="lightbox" class="lightbox" onclick="closeImage()">
+                <img id="lightbox-img" src="" alt="Expanded Image">
+            </div>    
+        </section>
+
+
+        <section class="contact-form">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>  
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+        <footer>
+            <button onclick="showMessage()">Click to Connect</button>
+            <p>&copy; 2025 Navya Katta| Internship Task 2</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
